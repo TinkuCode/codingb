@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI/UX Designer Portfolio - [TINKU KUMAR MAJHI]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">[TINKU KUMAR MAJHI]</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Works</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Hello, I'm <span>[TINKU KUMAR MAJHI]</span></h1>
+            <p>UI/UX Designer | Creating Intuitive Digital Experiences</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate fresher UI/UX Designer who loves turning complex problems into simple, beautiful, and intuitive designs. My goal is to create user-centric solutions that are both aesthetic and functional.
+        </p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-card">
+                <img src= alt="Project 1">
+                <h3>Mobile App Redesign</h3>
+                <p>Redesigned a productivity app for better usability and a modern look.</p>
+            </div>
+            <div class="portfolio-card">
+                <img src="" alt="Project 2">
+                <h3>Website Landing Page</h3>
+                <p>Crafted a clean, responsive landing page for a startup brand.</p>
+            </div>
+            <div class="portfolio-card">
+                <img src=" alt="Project 3">
+                <h3>Wireframe Prototypes</h3>
+                <p>Developed interactive wireframes for e-commerce website flows.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Sketch</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>User Research</li>
+            <li>HTML &amp; CSS</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social">
+            <a href="#">LinkedIn</a>
+        </div>
+    </section>
+    <table>
+        <tr >
+        <th>QUALIFICATION</th>
+        <th>UNIVERSITY/SCHOOL NAME</th>
+        <th>PASSING YEAR</th>
+        <th>MARKS</th>
+        </tr>
+        
+        <tr>
+        <td>MATRICAULATION</td>
+        <td>AIWC academy of excllence</td>
+        <td>2017</td>
+        <td>80</TD>
+        
+        </tr>
+        <td>Intermidiate</td>
+        <td>kolhan inter college</td>
+        <td>2020</td>
+        <td>75</TD>
+        </tr>
+        <tr>
+        <td>graduation</td>
+        <td>MRS.KMPM VOCATIONL COLLEGE</td>
+        <td>2023</td>
+        <td>80</TD>
+        </tr>
+        <tr>
+            <td>master</td>
+        <td>srinath university</td>
+        <td>appering</td>
+        <td>60</TD>
+        </tr>
+        
+        
+        
+        </table>
+    <footer>
+     2025 [TINKU KUMAR MAJHI]
+    </footer>
+    <script>
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
