@@ -1,0 +1,18 @@
+schemaVersion: 2.0.0
+components:
+  - name: dev
+    container:
+      image: public.ecr.aws/aws-mde/universal-image:latest
+commands:
+  - id: install
+    exec:
+      component: dev
+      commandLine: "npm install -g http-server"
+  - id: build
+    exec:
+      component: dev
+      commandLine: "echo 'Static website - no build required'"
+  - id: test
+    exec:
+      component: dev
+      commandLine: "echo 'Running tests...' && http-server . -c-1 -p 8080 & sleep 5 && curl -s http://localhost:8080 | grep -q 'The Curious Designer' && echo 'Tests passed: Homepage title found' || (echo 'Tests failed: Homepage title not found' && exit 1)"
